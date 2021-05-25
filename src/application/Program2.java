@@ -33,22 +33,18 @@ public class Program2 {
 		departmentDao.insert(newDepartment);
 		System.out.println("Inserted! New id = "+ newDepartment.getId());
 		
-		/*
-		System.out.println("\n=== TESTE 2: seller findByDepartmentId ===");
-		Department department = new Department(2, null);
-		List<Seller> list =  sellerDao.findByDepartment(department);
-		for (Seller obj : list) {
-			System.out.println(obj);
-		}
-		
-		
-		
-		
-		System.out.println("\n=== TESTE 5: seller update ===");
-		seller = sellerDao.findById(1);
-		seller.setName("Martha Waine");
-		sellerDao.update(seller);
+		System.out.println("\n=== TESTE 4: department update ===");
+		Department dep2 = departmentDao.findById(1);
+		dep2.setName("Food");
+		departmentDao.update(dep2);
 		System.out.println("Update completed");
+		
+		/*
+		
+		
+		
+		
+
 		
 		
 		System.out.println("\n=== TESTE 5: seller delete ===");
