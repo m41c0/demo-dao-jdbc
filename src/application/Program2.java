@@ -27,6 +27,12 @@ public class Program2 {
 			System.out.println(d);
 		}
 		
+
+		System.out.println("\n=== TESTE 3: department insert ===");
+		Department newDepartment = new Department(null, "Music");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted! New id = "+ newDepartment.getId());
+		
 		/*
 		System.out.println("\n=== TESTE 2: seller findByDepartmentId ===");
 		Department department = new Department(2, null);
@@ -37,10 +43,6 @@ public class Program2 {
 		
 		
 		
-		System.out.println("\n=== TESTE 4: seller insert ===");
-		Seller newSeller = new Seller(null, "Greg", "gerg@gmail.com", new Date(), 4000.00, department);
-		sellerDao.insert(newSeller);
-		System.out.println("Inserted! New id = "+ newSeller.getId());
 		
 		System.out.println("\n=== TESTE 5: seller update ===");
 		seller = sellerDao.findById(1);
